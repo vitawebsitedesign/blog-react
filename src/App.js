@@ -11,7 +11,7 @@ function App() {
           <aside className="bookmark d-flex flex-column mr-5">
             <div>
               <div className="d-inline-block bookmark--pagenum">
-                <i class="material-icons md-18">ac_unit</i>
+                <i className="material-icons md-16">blur_on</i>
               </div>
             </div>
             <div className="bookmark--name d-flex align-items-center justify-content-center pt-5 text-nowrap text-uppercase">
@@ -20,9 +20,7 @@ function App() {
           </aside>
           <aside className="d-flex flex-column flex-grow-1 ml-4 text-left wrapper-textual">
             <div className="d-flex flex-column text-uppercase text-lighter wrapper-textual--title">
-              <div className="mt-1 mb-3">winter</div>
-              <div className="my-3">mute</div>
-              <div className="mt-3">software.</div>
+              <div className="mt-1 mb-3">dreamware.</div>
             </div>
             <div className="mt-5 mb-3 divider"></div>
             <div className="d-flex mb-5">
