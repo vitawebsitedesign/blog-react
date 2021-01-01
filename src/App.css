@@ -1,38 +1,52 @@
+html, body, #root, .App, .App--row {
+  height: 100%;
+}
+body {
+  color: #1f1f1f;
+  font-family: 'dejavu-sans';
+  font-size: 16px;
+}
+.page-edge-shadow {
+  background: rgb(212,212,212);
+  background: linear-gradient(180deg, #f1f1f1 0%, rgba(0,212,255,0) 100%);
+  height: 18px;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper-textual, .bookmark {
+  padding-top: 5vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bookmark--pagenum {
+  border-bottom: 1px solid #1f1f1f;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bookmark--name {
+  writing-mode: vertical-rl;
 }
-
-.App-link {
-  color: #61dafb;
+.wrapper-textual--title {
+  color: #5d91ca;
+  font-size: 4rem;
+  line-height: 3.2rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-bold {
+  font-family: 'dejavu-sans bold';
+}
+.text-lighter {
+  font-family: 'dejavu-sans lighter';
+}
+.wrapper-textual--headline {
+  flex: 0 1 60%;
+}
+.bookmark, .wrapper-textual--article, .wrapper-textual--quote, .wrapper-textual--table-of-contents {
+  font-size: 0.74rem;
+}
+.wrapper-textual--table-of-contents tr {
+  border-bottom: 1px solid lightgrey;
+}
+.divider {
+  border-bottom: 2px solid #7984a9;
+  width: 15%;
+}
+.gallery {
+  
 }
