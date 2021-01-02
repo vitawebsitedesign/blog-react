@@ -1,3 +1,6 @@
+import GalleryTile from './components/GalleryTile';
+import imgBear from './img/bear.gif';
+import vidPlaceholder from './vid/video-placeholder.mp4';
 import './App.css';
 
 function App() {
@@ -20,7 +23,10 @@ function App() {
           </aside>
           <aside className="d-flex flex-column flex-grow-1 ml-4 text-left wrapper-textual">
             <div className="d-flex flex-column text-uppercase text-lighter wrapper-textual--title">
-              <div className="mt-1 mb-3">dreamware.</div>
+              <div className="mt-1 mb-3">
+                <span className="text-powder-blue">dream</span>
+                <span className="text-powder-blue">ware.</span>  
+              </div>
             </div>
             <div className="mt-5 mb-3 divider"></div>
             <div className="d-flex mb-5">
@@ -131,12 +137,44 @@ function App() {
                     <td>L</td>
                     <td className="text-bold">ASX market capitalisation</td>
                   </tr>
+                  <tr>
+                    <td>M</td>
+                    <td className="text-bold">Software engineering blog</td>
+                  </tr>
                 </tbody>
               </table>
             </section>
           </aside>
         </aside>
-        <main className="gallery col-12 col-md-8">c</main>
+        <main className="col-12 col-md-8 wrapper-gallery">
+          <div className="row position-relative wrapper-gallery--row-1">
+            <div className="col-12 d-flex justify-content-end">
+              <GalleryTile src={vidPlaceholder} captionTitle="Geometry scripts" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Modern BNG" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Sudoku" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Campaign XML Generator" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Agile AES" />
+            </div>
+          </div>
+          <div className="mb-4"></div>
+          <div className="row position-relative wrapper-gallery--row-2">
+            <div className="col-12 d-flex justify-content-end">
+              <GalleryTile src={vidPlaceholder} captionTitle="Mint" />
+              <GalleryTile src={vidPlaceholder} captionTitle="SQL Keyword Formatter" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Bulk CSV URL Shortener" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Follow the process" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Machi Koro" />
+            </div>
+          </div>
+          <div className="mb-4"></div>
+          <div className="row position-relative wrapper-gallery--row-3">
+            <div className="col-12 d-flex justify-content-end">
+              <GalleryTile src={vidPlaceholder} captionTitle="Realestate.com.au crawler" />
+              <GalleryTile src={vidPlaceholder} captionTitle="ASX market capitalisation" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Software engineering blog" />
+            </div>
+          </div>
+        </main>
       </div>
     </div>
   );
