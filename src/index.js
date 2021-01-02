@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/custom-bootstrap-breakpoints.css';
 import './css/fonts.css';
 import './index.css';
 import App from './App';

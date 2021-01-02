@@ -10,7 +10,7 @@ function App() {
         <div className="col-12 page-edge-shadow"></div>
       </div>
       <div className="row App--row">
-        <aside className="col-12 col-md-4 d-flex">
+        <aside className="col-12 col-xxl-4 d-flex">
           <aside className="bookmark d-flex flex-column mr-5">
             <div>
               <div className="d-inline-block bookmark--pagenum">
@@ -146,32 +146,32 @@ function App() {
             </section>
           </aside>
         </aside>
-        <main className="col-12 col-md-8 wrapper-gallery">
+        <main className="col-12 col-xxl-8 wrapper-gallery">
           <div className="row position-relative wrapper-gallery--row-1">
             <div className="col-12 d-flex justify-content-end">
-              <GalleryTile src={vidPlaceholder} captionTitle="Geometry scripts" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Modern BNG" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Sudoku" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Campaign XML Generator" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Agile AES" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Geometry scripts" href="" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Modern BNG" href="" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Sudoku" href="" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Campaign XML Generator" href="" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Agile AES" href="" />
             </div>
           </div>
           <div className="mb-4"></div>
           <div className="row position-relative wrapper-gallery--row-2">
             <div className="col-12 d-flex justify-content-end">
-              <GalleryTile src={vidPlaceholder} captionTitle="Mint" />
-              <GalleryTile src={vidPlaceholder} captionTitle="SQL Keyword Formatter" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Bulk CSV URL Shortener" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Follow the process" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Machi Koro" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Mint" href="" />
+              <GalleryTile src={vidPlaceholder} captionTitle="SQL Keyword Formatter" href="" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Bulk CSV URL Shortener" href="" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Follow the process" href="" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Machi Koro" href="" />
             </div>
           </div>
           <div className="mb-4"></div>
           <div className="row position-relative wrapper-gallery--row-3">
             <div className="col-12 d-flex justify-content-end">
-              <GalleryTile src={vidPlaceholder} captionTitle="Realestate.com.au crawler" />
-              <GalleryTile src={vidPlaceholder} captionTitle="ASX market capitalisation" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Software engineering blog" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Realestate.com.au crawler" href="" />
+              <GalleryTile src={vidPlaceholder} captionTitle="ASX market capitalisation" href="" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Software engineering blog" href="" />
             </div>
           </div>
         </main>

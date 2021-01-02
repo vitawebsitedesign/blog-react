@@ -5,3 +5,7 @@
     height: 200px;
     width: 200px;
 }
+.gallery-tile--video {
+    min-height: 100%;
+    min-width: 100%;
+}
