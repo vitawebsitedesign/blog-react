@@ -20,7 +20,7 @@ const resetVideo = (event) => {
 
 const GalleryTile = props => {
     return (
-        <a href={props.href} onMouseEnter={playVideo} onMouseLeave={resetVideo} className="ml-4 position-relative gallery-tile">
+        <a href={props.href} onMouseEnter={playVideo} onMouseLeave={resetVideo} className={props.className + ' position-relative gallery-tile'}>
             <GalleryTileCaption captionTitle={props.captionTitle} />
             <video className="gallery-tile--video" muted loop>
                 <source src={props.src} type="video/mp4" />
