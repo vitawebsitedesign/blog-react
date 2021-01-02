@@ -14,8 +14,11 @@ body {
 .App {
   text-align: center;
 }
-.wrapper-textual, .bookmark {
+.wrapper-textual, .bookmark, .wrapper-gallery {
   padding-top: 5vh;
+}
+.wrapper-gallery {
+  padding-right: calc(5vh + 18px);  /* 5vh = top spacing, 18px = drop shadow at top of page */
 }
 .bookmark--pagenum {
   border-bottom: 1px solid #1f1f1f;
@@ -24,7 +27,6 @@ body {
   writing-mode: vertical-rl;
 }
 .wrapper-textual--title {
-  color: #5d91ca;
   font-size: 4rem;
   line-height: 3.2rem;
 }
@@ -47,6 +49,16 @@ body {
   border-bottom: 2px solid #7984a9;
   width: 15%;
 }
-.gallery {
-  
+
+.text-powder-blue {
+  color: #5d91ca;
+}
+.wrapper-gallery--row-1 {
+  z-index: 1000;
+}
+.wrapper-gallery--row-2 {
+  z-index: 100;
+}
+.wrapper-gallery--row-3 {
+  z-index: 10;
 }
