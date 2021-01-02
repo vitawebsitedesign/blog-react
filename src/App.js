@@ -1,5 +1,4 @@
 import GalleryTile from './components/GalleryTile';
-import imgBear from './img/bear.gif';
 import vidPlaceholder from './vid/video-placeholder.mp4';
 import './App.css';
 
@@ -10,8 +9,8 @@ function App() {
         <div className="col-12 page-edge-shadow"></div>
       </div>
       <div className="row App--row">
-        <aside className="col-12 col-md-4 d-flex">
-          <aside className="bookmark d-flex flex-column mr-5">
+        <aside className="col-12 col-xxl-4 d-flex">
+          <aside className="d-none d-xl-flex bookmark flex-column mr-5">
             <div>
               <div className="d-inline-block bookmark--pagenum">
                 <i className="material-icons md-16">blur_on</i>
@@ -146,32 +145,24 @@ function App() {
             </section>
           </aside>
         </aside>
-        <main className="col-12 col-md-8 wrapper-gallery">
+        <main className="col-12 col-xxl-8 wrapper-gallery">
           <div className="row position-relative wrapper-gallery--row-1">
-            <div className="col-12 d-flex justify-content-end">
-              <GalleryTile src={vidPlaceholder} captionTitle="Geometry scripts" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Modern BNG" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Sudoku" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Campaign XML Generator" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Agile AES" />
-            </div>
-          </div>
-          <div className="mb-4"></div>
-          <div className="row position-relative wrapper-gallery--row-2">
-            <div className="col-12 d-flex justify-content-end">
-              <GalleryTile src={vidPlaceholder} captionTitle="Mint" />
-              <GalleryTile src={vidPlaceholder} captionTitle="SQL Keyword Formatter" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Bulk CSV URL Shortener" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Follow the process" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Machi Koro" />
-            </div>
-          </div>
-          <div className="mb-4"></div>
-          <div className="row position-relative wrapper-gallery--row-3">
-            <div className="col-12 d-flex justify-content-end">
-              <GalleryTile src={vidPlaceholder} captionTitle="Realestate.com.au crawler" />
-              <GalleryTile src={vidPlaceholder} captionTitle="ASX market capitalisation" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Software engineering blog" />
+            <div className="col-12 d-flex flex-wrap justify-content-end">
+              <GalleryTile src={vidPlaceholder} captionTitle="Geometry scripts" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Modern BNG" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Sudoku" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Campaign XML Generator" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Agile AES" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
+
+              <GalleryTile src={vidPlaceholder} captionTitle="Mint" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
+              <GalleryTile src={vidPlaceholder} captionTitle="SQL Keyword Formatter" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Bulk CSV URL Shortener" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Follow the process" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Machi Koro" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
+
+              <GalleryTile src={vidPlaceholder} captionTitle="Realestate.com.au crawler" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
+              <GalleryTile src={vidPlaceholder} captionTitle="ASX market capitalisation" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
+              <GalleryTile src={vidPlaceholder} captionTitle="Software engineering blog" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
             </div>
           </div>
         </main>

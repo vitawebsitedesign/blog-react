@@ -2,7 +2,7 @@ import GalleryTileCaption from './GalleryTileCaption';
 import './GalleryTile.css';
 
 const playVideo = (event) => {
-    const video = event.currentTarget.querySelector('.video');
+    const video = event.currentTarget.querySelector('.gallery-tile--video');
     video.play();  
 
     const caption = event.currentTarget.querySelector('.caption');
@@ -10,7 +10,7 @@ const playVideo = (event) => {
 };
 
 const resetVideo = (event) => {
-    const video = event.currentTarget.querySelector('.video');
+    const video = event.currentTarget.querySelector('.gallery-tile--video');
     video.pause();
     video.currentTime = 0;
 
@@ -20,12 +20,12 @@ const resetVideo = (event) => {
 
 const GalleryTile = props => {
     return (
-        <div onMouseEnter={playVideo} onMouseLeave={resetVideo} className="ml-4 position-relative gallery-tile">
+        <a href={props.href} onMouseEnter={playVideo} onMouseLeave={resetVideo} className={props.className + ' position-relative gallery-tile'}>
             <GalleryTileCaption captionTitle={props.captionTitle} />
-            <video className="w-100 h-100 video" muted loop>
+            <video className="gallery-tile--video" muted loop>
                 <source src={props.src} type="video/mp4" />
             </video>
-        </div>
+        </a>
     );
 };
 
