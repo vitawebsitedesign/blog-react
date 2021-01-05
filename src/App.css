@@ -39,7 +39,7 @@ body {
 .wrapper-textual--headline {
   flex: 0 1 60%;
 }
-.bookmark, .wrapper-textual--article, .wrapper-textual--quote, .wrapper-textual--table-of-contents {
+.text-small, .bookmark, .wrapper-textual--article, .wrapper-textual--quote, .wrapper-textual--table-of-contents {
   font-size: 0.74rem;
 }
 .wrapper-textual--table-of-contents tr {
