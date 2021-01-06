@@ -2,7 +2,7 @@ import './GalleryTileCaption.css';
 
 const GalleryTileCaption = props => {
     return (
-        <div className="w-100 px-1 py-2 position-absolute text-uppercase caption">
+        <div className={props.className + " w-100 p-2 position-absolute text-uppercase text-left caption"}>
             {props.captionTitle}
         </div>
     );

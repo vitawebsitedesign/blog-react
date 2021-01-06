@@ -1,11 +1,9 @@
 .caption {
-    background-color: #c1c1c1;
-    color: white;
+    color: grey;
     font-size: 0.74rem;
     height: fit-content;
-    left: 0;
     top: 0;
 }
 .caption.active {
-    background-color: #5e91ca;
+    font-family: 'dejavu-sans bold';
 }
