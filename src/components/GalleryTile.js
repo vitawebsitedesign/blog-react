@@ -1,5 +1,6 @@
 import GalleryTileCaption from './GalleryTileCaption';
 import './GalleryTile.css';
+import {NavLink} from 'react-router-dom';
 
 const playVideo = (event) => {
     const video = event.currentTarget.querySelector('.gallery-tile--video');
@@ -20,12 +21,12 @@ const resetVideo = (event) => {
 
 const GalleryTile = props => {
     return (
-        <a href={props.href} onMouseEnter={playVideo} onMouseLeave={resetVideo} className={props.className + ' position-relative gallery-tile'}>
-            <GalleryTileCaption captionTitle={props.captionTitle} />
+        <NavLink to={'/exhibit/' + props.exhibitId} onMouseEnter={playVideo} onMouseLeave={resetVideo} className={props.className + ' position-relative gallery-tile'}>
+            <GalleryTileCaption captionTitle={props.captionTitle} className="text-small" />
             <video className="gallery-tile--video" muted loop>
                 <source src={props.src} type="video/mp4" />
             </video>
-        </a>
+        </NavLink>
     );
 };
 

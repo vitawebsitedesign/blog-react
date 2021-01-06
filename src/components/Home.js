@@ -1,8 +1,16 @@
-import GalleryTile from './components/GalleryTile';
-import vidPlaceholder from './vid/video-placeholder.mp4';
-import './App.css';
+import {connect} from 'react-redux';
+import GalleryTile from './GalleryTile';
+import vidPlaceholder from '../vid/video-placeholder.mp4';
+import './Home.css';
 
-function App() {
+const getLink = exhibit => {
+  return <GalleryTile key={exhibit.id} exhibitId={exhibit.id} src={vidPlaceholder} captionTitle={exhibit.title} className="ml-1 ml-xl-4 mb-1 mb-xl-4" />;
+};
+
+function Home(props) {
+
+  const exhibits = props.exhibits.map(getLink);
+
   return (
     <div className="App container-fluid">
       <div className="row">
@@ -148,21 +156,7 @@ function App() {
         <main className="col-12 col-xxl-8 wrapper-gallery">
           <div className="row position-relative wrapper-gallery--row-1">
             <div className="col-12 d-flex flex-wrap justify-content-end">
-              <GalleryTile src={vidPlaceholder} captionTitle="Geometry scripts" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Modern BNG" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Sudoku" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Campaign XML Generator" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Agile AES" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
-
-              <GalleryTile src={vidPlaceholder} captionTitle="Mint" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
-              <GalleryTile src={vidPlaceholder} captionTitle="SQL Keyword Formatter" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Bulk CSV URL Shortener" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Follow the process" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Machi Koro" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
-
-              <GalleryTile src={vidPlaceholder} captionTitle="Realestate.com.au crawler" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
-              <GalleryTile src={vidPlaceholder} captionTitle="ASX market capitalisation" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
-              <GalleryTile src={vidPlaceholder} captionTitle="Software engineering blog" href="" className="ml-1 ml-xl-4 mb-1 mb-xl-4" />
+              {exhibits}
             </div>
           </div>
         </main>
@@ -171,4 +165,6 @@ function App() {
   );
 }
 
-export default App;
+const mapStateToprops = state => ({ exhibits: state });
+
+export default connect(mapStateToprops)(Home);
