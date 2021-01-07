@@ -4,6 +4,7 @@ import {Provider} from 'react-redux';
 import store from './redux/store/store';
 import Home from './components/Home';
 import Exhibit from './components/Exhibit';
+import './App.css';
 
 function App() {
   return (

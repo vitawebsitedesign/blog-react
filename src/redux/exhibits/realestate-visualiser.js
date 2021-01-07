@@ -5,6 +5,28 @@ const exhibit = {
         "product": ["Realestate.com.au", "Data scraping", "Data post-processing", "API integration"],
         "programming": ["Google Maps API", "PHP"]
     },
+	"tags": [
+		{
+			"icon": "search",
+			"text": "Data scraping"
+		},
+		{
+			"icon": "analytics",
+			"text": "Data post-processing"
+        },
+		{
+			"icon": "explore",
+			"text": "Google Maps API"
+        },
+		{
+			"icon": "home",
+			"text": "Realestate.com.au"
+        },
+		{
+			"icon": "code",
+			"text": "PHP"
+        }
+	],
     "overview": `
 Realestate.com.au is a website that advertises rental listings for tenants.
 In early 2017, the website did not yet have a feature to visualize rent locations on a map. Rather, listings were only displayed in a table format. There was no productive way for users to identify precise location & rent prices for multiple REA listings across all Sydney suburbs.

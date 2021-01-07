@@ -1,10 +1,28 @@
 const exhibit = {
-	"id": "blender-scripts-for-geometry-creation-and-materials-application",
-	"title": "Blender scripts for geometry creation & materials application",
-	"tagsByType": {
-		"product": ["geometry", "materials", "3D rendering"],
-		"programming": ["Python", "Blender API"]
-	},
+	"id": "3d-geometry-and-materials",
+	"title": "3d geometry & materials scripting",
+	"tags": [
+		{
+			"icon": "style",
+			"text": "3D rendering"
+		},
+		{
+			"icon": "category",
+			"text": "geometry"
+		},
+		{
+			"icon": "fingerprint",
+			"text": "materials"
+		},
+		{
+			"icon": "device_hub",
+			"text": "Blender API"
+		},
+		{
+			"icon": "code",
+			"text": "Python"
+		}
+	],
 	"overview": `
 Blender is a 3D construction, animation & rendering tool.
 Blender has an API that can be interacted with Python scripts to develop 3D geometry & scenes.

@@ -1,10 +1,28 @@
 const exhibit = {
 	"id": "sudoku",
 	"title": "Sudoku",
-	"tagsByType": {
-		"product": ["Algorithms"],
-		"programming": ["ReactJS", "Redux", "Typescript"]
-	},
+	"tags": [
+		{
+			"icon": "stars",
+			"text": "Open source"
+		},
+		{
+			"icon": "android",
+			"text": "Algorithms"
+		},
+		{
+			"icon": "sd_storage",
+			"text": "Redux"
+		},
+		{
+			"icon": "code",
+			"text": "Typescript"
+		},
+		{
+			"icon": "code",
+			"text": "ReactJS"
+		}
+	],
 	"overview": `
 Well-formed Sudoku puzzles have a solution that can be determined via algorithms.
 This project explores the application of depth-first tree searching (in combination with back-stepping) to brute-force sudoku puzzles.

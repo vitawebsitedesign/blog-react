@@ -1,10 +1,28 @@
 const exhibit = {
 	"id": "bulk-url-shortener",
 	"title": "Bulk CSV URL Shortener",
-	"tagsByType": {
-		"product": ["Hashing", "Spreadsheet processing"],
-		"programming": ["ASP.NET MVC Core", "Entity Framework Core", "Hashing"]
-	},
+	"tags": [
+		{
+			"icon": "stars",
+			"text": "Open source"
+		},
+		{
+			"icon": "vpn_key",
+			"text": "Hashing"
+		},
+		{
+			"icon": "format_align_left",
+			"text": "Spreadsheet processing"
+		},
+		{
+			"icon": "savings",
+			"text": "Entity Framework Core"
+		},
+		{
+			"icon": "code",
+			"text": "ASP.NET MVC Core"
+		}
+	],
 	"overview": `
 URL shortening services hash long URLs to enable hyperlinking in character-limited messages such as Twitter.
 A service that enabled users to import spreadsheets & bulk shorten URLs would provide a productivity boost.

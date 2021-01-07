@@ -1,10 +1,20 @@
 const exhibit = {
     "id": "machi-koro",
     "title": "Machi Koro",
-    "tagsByType": {
-        "product": ["Open source"],
-        "programming": ["ReactJS", "Bootstrap"]
-    },
+	"tags": [
+		{
+			"icon": "stars",
+			"text": "Open source"
+		},
+		{
+			"icon": "code",
+			"text": "ReactJS"
+		},
+		{
+			"icon": "dashboard",
+			"text": "Bootstrap"
+		}
+	],
     "overview": `
 "Machi Koro" is a 2012 tabletop physical board game.
 One morning, I had a craving to play a digital version of this product online, but at the time, there was no decent online alternative available. Most implementations had crude workflows & graphics, due to being constructed from extremely generic tabletop frameworks.

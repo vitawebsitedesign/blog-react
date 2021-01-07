@@ -1,10 +1,28 @@
 const exhibit = {
     "id": "bng-campaign-xml-generator",
     "title": "Campaign XML Generator",
-    "tagsByType": {
-        "product": ["Open source", "Code Pen"],
-        "programming": ["XML", "Selenium", "Webpack", "jQuery", "Bootstrap"]
-    },
+	"tags": [
+		{
+			"icon": "stars",
+			"text": "Open source"
+		},
+		{
+			"icon": "cloud_done",
+			"text": "Code Pen"
+		},
+		{
+			"icon": "code",
+			"text": "XML"
+		},
+		{
+			"icon": "android",
+			"text": "Selenium"
+        },
+		{
+			"icon": "dashboard",
+			"text": "Bootstrap"
+		}
+	],
     "overview": `
 BNG is a Steam product that enables consumers to integrate their hand-written XML files.
 Hand writing XML files (especially outside of an IDE) is error prone & unproductive.

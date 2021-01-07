@@ -1,9 +1,20 @@
 const exhibit = {
     "id": "follow-the-process",
     "title": "Follow the process",
-    "tagsByType": {
-        "product": ["Windows Mobile SDK", "C#"]
-    },
+	"tags": [
+		{
+			"icon": "stars",
+			"text": "Open source"
+		},
+		{
+			"icon": "phonelink_ring",
+			"text": "Windows Mobile SDK"
+		},
+		{
+			"icon": "code",
+			"text": "C#"
+		}
+	],
     "overview": `
 The Australian Stock Exchange (ASX) allows investors to exchange equities.
 As business conditions change on a daily basis, time windows open that enable the investment of attractive business opportunities.

@@ -18,19 +18,11 @@ const getLearntListItems = lessons => lessons.map((l, idx) =>
 
 class Exhibit extends React.Component {
     render() {
-        const tagsProduct = this.props.item.tagsByType.product;
-        const tagsProgramming = this.props.item.tagsByType.programming;
-        let tags = [];
-
-        if (tagsProduct)
-            tags = [...tags, ...tagsProduct];
-        if (tagsProgramming)
-            tags = [...tags, ...tagsProgramming];
-
-        const tagEles = tags.map(tag =>
-            <span key={tag} className="px-3 py-1 mr-2 border-left text-small text-secondary">
-                {tag}
-            </span>
+        const tagEles = this.props.item.tags.map(tag =>
+            <div key={tag.text} className="d-flex align-items-center py-1 mr-4 text-small text-capitalize text-secondary">
+                <i className="material-icons md-16 mr-1">{tag.icon}</i>
+                <span className="d-inline text-nowrap">{tag.text}</span>
+            </div>
         );
 
         return (
@@ -66,7 +58,7 @@ class Exhibit extends React.Component {
                             </div>
                         </div>
                         <div className="d-flex mb-5">
-                        {tagEles}
+                            {tagEles}
                         </div>
                         <section className="mt-4 row wrapper-textual--article">
                         <div className="col-12 col-md-6">
@@ -80,7 +72,7 @@ class Exhibit extends React.Component {
                             Applied techniques
                             </p>
                             <div>
-                                <ul>
+                                <ul className="pl-3">
                                     {getLearntListItems(this.props.item.learnt)}
                                 </ul>
                             </div>

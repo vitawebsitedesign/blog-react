@@ -90,7 +90,7 @@ function Home(props) {
                 <div>its your improvement from yesterday.</div>
               </div>
               <div className="col-12 col-md-6 d-flex align-items-center text-bold">
-                michael nguyen
+                <a href="https://www.linkedin.com/in/michael-nguyen57/" title="Opens michaels LinkedIn profile in a new tab" target="_blank">michael nguyen</a>
               </div>
             </section>
             <section className="mt-5 mb-5 wrapper-textual--table-of-contents">

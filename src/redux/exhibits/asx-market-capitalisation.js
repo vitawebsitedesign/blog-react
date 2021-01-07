@@ -1,10 +1,28 @@
 const exhibit = {
     "id": "asx-market-capitalisation",
     "title": "ASX market capitalisation",
-    "tagsByType": {
-        "product": ["Open source", "ASX API"],
-        "programming": ["ReactJS", "Bootstrap", "jQuery AJAX"]
-    },
+	"tags": [
+		{
+			"icon": "stars",
+			"text": "Open source"
+		},
+		{
+			"icon": "device_hub",
+			"text": "Australian Stock Exchange API"
+		},
+		{
+			"icon": "code",
+			"text": "ReactJS"
+		},
+		{
+			"icon": "dashboard",
+			"text": "Bootstrap"
+		},
+		{
+			"icon": "inventory_2",
+			"text": "jQuery AJAX"
+		}
+	],
     "overview": `
 The Australian Stock Exchange (ASX) displays company investor information.
 There was a period of time when their website was outdated & simply didn't display market capitalization for businesses.

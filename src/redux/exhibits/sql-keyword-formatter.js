@@ -1,10 +1,28 @@
 const exhibit = {
     "id": "sql-keyword-formatter",
     "title": "SQL Keyword Formatter",
-    "tagsByType": {
-        "product": ["Open source", "Microsoft Store"],
-        "programming": ["C#", "UWP", "T-SQL", "Regex"]
-    },
+	"tags": [
+		{
+			"icon": "emoji_events",
+			"text": "Microsoft Store"
+        },
+		{
+			"icon": "code",
+			"text": "Universal Windows Platform"
+		},
+		{
+			"icon": "code",
+			"text": "C#"
+		},
+		{
+			"icon": "pie_chart",
+			"text": "T-SQL"
+        },
+		{
+			"icon": "search",
+			"text": "Regex"
+		}
+	],
     "overview": `
 In ASP.NET architectures, raw T-SQL can be an attractive alternative to Entity Framework statements (Dapper/ADO.NET).
 This is especially true when it comes to expensive bulk operations.
