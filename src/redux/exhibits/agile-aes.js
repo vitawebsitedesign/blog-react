@@ -1,10 +1,28 @@
 const exhibit = {
 	"id": "agile-aes",
 	"title": "Agile AES",
-	"tagsByType": {
-		"product": ["Open source", "Encryption", "Nuget"],
-		"programming": ["C#", ".NET Standard"]
-	},
+	"tags": [
+		{
+			"icon": "stars",
+			"text": "Open source"
+		},
+		{
+			"icon": "lock",
+			"text": "Encryption"
+		},
+		{
+			"icon": "verified",
+			"text": "Nuget"
+		},
+		{
+			"icon": "inventory_2",
+			"text": ".NET Standard"
+		},
+		{
+			"icon": "code",
+			"text": "C#"
+		}
+	],
 	"overview": `
 .NET provides AES encryption functionality to developers, but usage involves a large code footprint.
 Thus, a library that delivers the same functionality with lesser footprint via abstraction would be incredibly valuable.

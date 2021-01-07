@@ -1,10 +1,28 @@
 const exhibit = {
     "id": "mint",
     "title": "Mint",
-    "tagsByType": {
-        "product": ["Open source", "API integration"],
-        "programming": ["Lua", "ReactJS", "Bootstrap"]
-    },
+	"tags": [
+		{
+			"icon": "stars",
+			"text": "Open source"
+        },
+		{
+			"icon": "code",
+			"text": "Lua"
+		},
+		{
+			"icon": "device_hub",
+			"text": "API integration"
+		},
+		{
+			"icon": "code",
+			"text": "ReactJS"
+		},
+		{
+			"icon": "dashboard",
+			"text": "Bootstrap"
+		}
+	],
     "overview": `
 Certain asset prices are determined by supply and demand.
 In 2004, Blizzard Entertainment released WoW, which featured an auction house system comprised of real bidders & sellers that influence prices.

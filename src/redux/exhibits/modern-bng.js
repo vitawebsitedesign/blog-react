@@ -1,10 +1,24 @@
 const exhibit = {
     "id": "modern-bng",
     "title": "Modern BNG",
-    "tagsByType": {
-        "product": ["Open source", "API integration"],
-        "programming": ["C#", ".NET", "Unity API", "BNG API"]
-    },
+	"tags": [
+		{
+			"icon": "stars",
+			"text": "Open source"
+        },
+		{
+			"icon": "device_hub",
+			"text": "Unity API"
+        },
+		{
+			"icon": "device_hub",
+			"text": "BNG API"
+        },
+		{
+			"icon": "code",
+			"text": "C# .NET"
+		}
+	],
     "overview": `
 BNG is a Steam product with retro-style aesthetics.
 Modern shader & lighting techniques are not supported out-of-the-box, however it does support API integrations with Unity.
