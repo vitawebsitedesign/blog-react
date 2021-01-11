@@ -1,9 +1,13 @@
 .caption {
+    background: white;
+    bottom: 5px;
     color: grey;
     font-size: 0.74rem;
     height: fit-content;
-    top: 0;
+    max-width: 90%;
+    right: 0;
 }
 .caption.active {
-    font-family: 'dejavu-sans bold';
+    background: #007bff;
+    color: white;
 }

@@ -13,3 +13,13 @@ a:hover {
 a:active {
     text-decoration: underline;
 }
+
+.text-bold {
+    font-family: 'dejavu-sans bold';
+}
+.text-lighter {
+    font-family: 'dejavu-sans lighter';
+}
+.text-powder-blue {
+    color: #5d91ca;
+}

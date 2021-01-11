@@ -30,12 +30,6 @@ body {
   font-size: 4rem;
   line-height: 3.2rem;
 }
-.text-bold {
-  font-family: 'dejavu-sans bold';
-}
-.text-lighter {
-  font-family: 'dejavu-sans lighter';
-}
 .wrapper-textual--headline {
   flex: 0 1 60%;
 }
@@ -48,10 +42,6 @@ body {
 .divider {
   border-bottom: 2px solid #7984a9;
   width: 15%;
-}
-
-.text-powder-blue {
-  color: #5d91ca;
 }
 .wrapper-gallery--row-1 {
   z-index: 1000;
