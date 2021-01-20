@@ -3,10 +3,6 @@ const exhibit = {
 	"title": "Agile AES",
 	"tags": [
 		{
-			"icon": "stars",
-			"text": "Open source"
-		},
-		{
 			"icon": "lock",
 			"text": "Encryption"
 		},

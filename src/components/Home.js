@@ -1,5 +1,6 @@
 import {connect} from 'react-redux';
 import GalleryTile from './GalleryTile';
+import Hyperlink from './Hyperlink';
 import vidPlaceholder from '../vid/video-placeholder.mp4';
 import './Home.css';
 
@@ -21,7 +22,7 @@ function Home(props) {
           <aside className="d-none d-xl-flex bookmark flex-column mr-5">
             <div>
               <div className="d-inline-block bookmark--pagenum">
-                <i className="material-icons md-16">blur_on</i>
+                <i className="material-icons md-24">blur_on</i>
               </div>
             </div>
             <div className="bookmark--name d-flex align-items-center justify-content-center pt-5 text-nowrap text-uppercase">
@@ -90,66 +91,10 @@ function Home(props) {
                 <div>its your improvement from yesterday.</div>
               </div>
               <div className="col-12 col-md-6 d-flex align-items-center text-bold">
-                <a href="https://www.linkedin.com/in/michael-nguyen57/" title="Opens michaels LinkedIn profile in a new tab" target="_blank">michael nguyen</a>
+                <Hyperlink href="https://www.linkedin.com/in/michael-nguyen57/" title="Opens michaels LinkedIn profile in a new tab">
+                  michael nguyen
+                </Hyperlink>
               </div>
-            </section>
-            <section className="mt-5 mb-5 wrapper-textual--table-of-contents">
-              <table className="w-100">
-                <tbody>
-                  <tr>
-                    <td className="pr-2">A</td>
-                    <td className="text-bold">Blender scripts for geometry creation &amp; materials application</td>
-                  </tr>
-                  <tr>
-                    <td>B</td>
-                    <td className="text-bold">Modern BNG</td>
-                  </tr>
-                  <tr>
-                    <td>C</td>
-                    <td className="text-bold">Sudoku</td>
-                  </tr>
-                  <tr>
-                    <td>D</td>
-                    <td className="text-bold">Campaign XML Generator</td>
-                  </tr>
-                  <tr>
-                    <td>E</td>
-                    <td className="text-bold">Agile AES</td>
-                  </tr>
-                  <tr>
-                    <td>F</td>
-                    <td className="text-bold">Mint</td>
-                  </tr>
-                  <tr>
-                    <td>G</td>
-                    <td className="text-bold">SQL Keyword Formatter</td>
-                  </tr>
-                  <tr>
-                    <td>H</td>
-                    <td className="text-bold">Bulk CSV URL Shortener</td>
-                  </tr>
-                  <tr>
-                    <td>I</td>
-                    <td className="text-bold">Follow the process</td>
-                  </tr>
-                  <tr>
-                    <td>J</td>
-                    <td className="text-bold">Machi Koro</td>
-                  </tr>
-                  <tr>
-                    <td>K</td>
-                    <td className="text-bold">Realestate.com.au crawler</td>
-                  </tr>
-                  <tr>
-                    <td>L</td>
-                    <td className="text-bold">ASX market capitalisation</td>
-                  </tr>
-                  <tr>
-                    <td>M</td>
-                    <td className="text-bold">Software engineering blog</td>
-                  </tr>
-                </tbody>
-              </table>
             </section>
           </aside>
         </aside>
@@ -160,6 +105,9 @@ function Home(props) {
             </div>
           </div>
         </main>
+      </div>
+      <div className="row">
+        <div className="col-12 page-edge-shadow reverse"></div>
       </div>
     </div>
   );

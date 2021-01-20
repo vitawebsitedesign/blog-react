@@ -11,10 +11,6 @@ const exhibit = {
 			"text": "Data scraping"
 		},
 		{
-			"icon": "analytics",
-			"text": "Data post-processing"
-        },
-		{
 			"icon": "explore",
 			"text": "Google Maps API"
         },

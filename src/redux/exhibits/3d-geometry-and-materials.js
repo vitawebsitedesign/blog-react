@@ -3,10 +3,6 @@ const exhibit = {
 	"title": "3d geometry & materials scripting",
 	"tags": [
 		{
-			"icon": "style",
-			"text": "3D rendering"
-		},
-		{
 			"icon": "category",
 			"text": "geometry"
 		},
@@ -39,8 +35,13 @@ These scripts use the Blender API to create & edit geometry, script animations o
             {
                 "src": "https://i.imgur.com/l99rCwj.png",
                 "alt": "3D curves with animation keyframes & emissive materials"
+			}
+		],
+        "videos": [
+            {
+                "mp4": "https://i.imgur.com/f1BX1n0.mp4"
             }
-        ]
+        ],
 	},
     "codeSnippets": [
         "https://gist.github.com/vitawebsitedesign/580c13e51eeb6d87d4bf847df4bd286d",

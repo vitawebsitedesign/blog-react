@@ -3,10 +3,6 @@ const exhibit = {
 	"title": "Sudoku",
 	"tags": [
 		{
-			"icon": "stars",
-			"text": "Open source"
-		},
-		{
 			"icon": "android",
 			"text": "Algorithms"
 		},

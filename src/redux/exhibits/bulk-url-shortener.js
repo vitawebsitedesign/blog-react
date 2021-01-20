@@ -3,10 +3,6 @@ const exhibit = {
 	"title": "Bulk CSV URL Shortener",
 	"tags": [
 		{
-			"icon": "stars",
-			"text": "Open source"
-		},
-		{
 			"icon": "vpn_key",
 			"text": "Hashing"
 		},

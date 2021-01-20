@@ -3,10 +3,6 @@ const exhibit = {
     "title": "ASX market capitalisation",
 	"tags": [
 		{
-			"icon": "stars",
-			"text": "Open source"
-		},
-		{
 			"icon": "device_hub",
 			"text": "Australian Stock Exchange API"
 		},

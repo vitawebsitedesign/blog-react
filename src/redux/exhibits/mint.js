@@ -3,10 +3,6 @@ const exhibit = {
     "title": "Mint",
 	"tags": [
 		{
-			"icon": "stars",
-			"text": "Open source"
-        },
-		{
 			"icon": "code",
 			"text": "Lua"
 		},

@@ -1,28 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Hyperlink from './Hyperlink';
 
 const getAnchorListItems = urls => urls.map((u, idx) =>
-    <a key={idx} href={u} target="_blank" rel="noopener noreferrer" title="click to open this external link in a new tab" className="d-block">
+    <Hyperlink key={idx} href={u}>
         {u}
-    </a>
+    </Hyperlink>
 );
 
 const getRows = urlsByType => Object.keys(urlsByType).map(title =>
-    <tr key={title}>
-        <td className="pr-2 text-capitalize">{title}</td>
-        <td className="text-bold">
+    <div key={title} className="mb-3 text-bold">
+        <div className="category text-capitalize">{title}</div>
+        <div>
             {getAnchorListItems(urlsByType[title])}
-        </td>
-    </tr>
+        </div>
+    </div>
 );
 
-const ExhibitUrls = props => (
-    <table className="w-100">
-        <tbody>
-            {getRows(props.urlsByType)}
-        </tbody>
-    </table>
-);
+const ExhibitUrls = props => getRows(props.urlsByType);
 
 ExhibitUrls.propTypes = {
     urlsByType: PropTypes.objectOf(PropTypes.arrayOf(PropTypes.string))
