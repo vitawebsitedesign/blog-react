@@ -11,10 +11,6 @@ const exhibit = {
 			"text": "Universal Windows Platform"
 		},
 		{
-			"icon": "code",
-			"text": "C#"
-		},
-		{
 			"icon": "pie_chart",
 			"text": "T-SQL"
         },

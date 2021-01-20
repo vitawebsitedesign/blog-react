@@ -14,7 +14,7 @@ const getOverviewParagraphs = overview => overview.trim().split('\n').map((o, id
 );
 
 const getLearntListItems = lessons => lessons.map((l, idx) => 
-    <li key={idx}>
+    <li key={idx} className="applied-technique">
         {l}
     </li>
 );
@@ -29,7 +29,7 @@ const getPreviewImgs = imgs => imgs.map((img, idx) =>
 );
 
 const getPreviewVids = vids => vids.map((v, idx) =>
-    <div key={idx} className="col-12 col-lg-6">
+    <div key={idx} className="col-12 col-lg-6 wrapper-assets--video">
         <HtmlVideo mp4s={[v.mp4]} />
     </div>
 );
@@ -44,7 +44,7 @@ const getPreviewYoutube = youtubes => youtubes.map((url, idx) =>
         frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
-        className="col-12 col-lg-6"
+        className="col-12 col-lg-6 wrapper-assets--video"
     />
 );
 
@@ -58,7 +58,7 @@ class Exhibit extends React.Component {
     render() {
         const tagEles = this.props.item.tags.map(tag =>
             <div key={tag.text} className="d-flex align-items-center py-1 mr-4 text-small text-capitalize text-secondary">
-                <i className="material-icons md-16 mr-1">{tag.icon}</i>
+                <i className="material-icons md-24 mr-1">{tag.icon}</i>
                 <span className="d-inline text-nowrap">{tag.text}</span>
             </div>
         );
@@ -73,7 +73,7 @@ class Exhibit extends React.Component {
                     <aside className="d-none d-xl-flex bookmark flex-column mr-5">
                         <div>
                             <div className="d-inline-block bookmark--pagenum">
-                                <i className="material-icons md-16">blur_on</i>
+                                <i className="material-icons md-24">blur_on</i>
                             </div>
                         </div>
                         <div className="bookmark--name d-flex align-items-center justify-content-center pt-5 text-nowrap text-uppercase">
@@ -81,12 +81,12 @@ class Exhibit extends React.Component {
                         </div>
                     </aside>
                     <aside className="d-flex flex-column flex-grow-1 ml-4 text-left wrapper-textual">
+                        <div className="text-small text-uppercase">
+                            <Link to="/" className="text-bold">
+                                home
+                            </Link><span className="text-secondary"> &gt; exhibit</span>
+                        </div>
                         <div className="d-flex flex-column text-uppercase text-lighter wrapper-textual--title">
-                            <div className="text-small text-uppercase">
-                                <Link to="/" className="text-bold">
-                                    home
-                                </Link> &gt; exhibit
-                            </div>
                             <div className="mt-1 mb-3">
                                 <div className="text-break text-powder-blue wrapper-textual--title--text">{this.props.item.title}</div>
                             </div>
@@ -97,7 +97,7 @@ class Exhibit extends React.Component {
                                 {this.props.item.preview.about}
                             </div>
                         </div>
-                        <div className="d-flex mb-5 flex-wrap">
+                        <div className="d-flex flex-wrap mb-5">
                             {tagEles}
                         </div>
                         <section className="mt-4 row wrapper-textual--article">
@@ -126,12 +126,15 @@ class Exhibit extends React.Component {
                     </aside>
                     <main className="col-12 col-xl-7 offset-xl-1 wrapper-gallery wrapper-assets">
                         <div className="row">
-                            {this.props.item.codeSnippets && this.props.item.codeSnippets.length && getEmbeddedCodeSnippets(this.props.item.codeSnippets)}
                             {this.props.item.preview.images && getPreviewImgs(this.props.item.preview.images)}
                             {this.props.item.preview.videos && getPreviewVids(this.props.item.preview.videos)}
                             {this.props.item.preview.youtubes && getPreviewYoutube(this.props.item.preview.youtubes)}
+                            {this.props.item.codeSnippets && this.props.item.codeSnippets.length && getEmbeddedCodeSnippets(this.props.item.codeSnippets)}
                         </div>
                     </main>
+                </div>
+                <div className="row">
+                    <div className="col-12 page-edge-shadow reverse"></div>
                 </div>
             </div>
         );

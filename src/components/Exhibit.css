@@ -9,11 +9,17 @@
 .wrapper-assets--photo:hover {
     filter: brightness(1.4);
 }
+.wrapper-assets--video {
+    margin: 0 0 1rem;
+}
+.applied-technique {
+    margin-bottom: 0.75rem;
+}
 figcaption {
     background: #f7f7f7;
     border: 1px solid #ccc;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
     color: #666;
 }
 

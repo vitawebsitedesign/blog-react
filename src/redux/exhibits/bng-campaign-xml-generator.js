@@ -3,10 +3,6 @@ const exhibit = {
     "title": "Campaign XML Generator",
 	"tags": [
 		{
-			"icon": "stars",
-			"text": "Open source"
-		},
-		{
 			"icon": "cloud_done",
 			"text": "Code Pen"
 		},
