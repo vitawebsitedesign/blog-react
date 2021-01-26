@@ -33,7 +33,10 @@ Hence, this web suite was created to:
 • Deliver PHP endpoints to provide JSON data to a responsive user interface
     `,
     "preview": {
-        "thumbnail": "https://i.imgur.com/pNH2BtH.jpg",
+		"thumbnails": {
+			"webm": "realestate-visualiser.webm",
+			"mp4": "realestate-visualiser.mp4"
+		},
         "about": "Mine & view realestate.com.au listings as pins on an interactive Google map"
     },
     "codeSnippets": [

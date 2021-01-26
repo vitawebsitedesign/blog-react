@@ -26,7 +26,10 @@ A website that can quickly fetch market capitalizations by company ticker would 
 This website allows users to productively fetch market capitalizations, & is made possible by direct access to the ASX API.
     `,
     "preview": {
-        "thumbnail": "https://i.imgur.com/KYympbc.jpg",
+		"thumbnails": {
+			"webm": "asx-market-capitalisation.webm",
+			"mp4": "asx-market-capitalisation.mp4"
+		},
         "about": "Productively view market capitalization for ASX companies"
     },
     "codeSnippets": [

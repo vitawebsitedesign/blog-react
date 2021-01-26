@@ -24,7 +24,8 @@ const GalleryTile = props => {
         <NavLink to={'/exhibit/' + props.exhibitId} onMouseEnter={playVideo} onMouseLeave={resetVideo} className={props.className + ' position-relative gallery-tile'}>
             <GalleryTileCaption captionTitle={props.captionTitle} className="text-small" />
             <video className="gallery-tile--video" muted loop>
-                <source src={props.src} type="video/mp4" />
+                <source src={`vid/${props.thumbnails.webm}`} type="video/webm" />
+                <source src={`vid/${props.thumbnails.mp4}`} type="video/mp4" />
             </video>
         </NavLink>
     );

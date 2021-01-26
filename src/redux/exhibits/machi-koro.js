@@ -21,7 +21,10 @@ One morning, I had a craving to play a digital version of this product online, b
 This project is a ReactJS implementation of the Machi Koro tabletop product. Too many hours were enjoyed from both implementing & experiencing.
     `,
     "preview": {
-        "thumbnail": "https://i.imgur.com/ITQYs4D.jpg",
+		"thumbnails": {
+			"webm": "machi-koro.webm",
+			"mp4": "machi-koro.mp4"
+		},
         "about": "Digital implementation of the Machi Koro board game"
     },
     "codeSnippets": [
