@@ -1,15 +1,14 @@
 import {connect} from 'react-redux';
 import GalleryTile from './GalleryTile';
 import Hyperlink from './Hyperlink';
-import vidPlaceholder from '../vid/video-placeholder.mp4';
+import Footer from './Footer';
 import './Home.css';
 
 const getLink = exhibit => {
-  return <GalleryTile key={exhibit.id} exhibitId={exhibit.id} src={vidPlaceholder} captionTitle={exhibit.title} className="ml-1 ml-xl-4 mb-1 mb-xl-4" />;
+  return <GalleryTile key={exhibit.id} exhibitId={exhibit.id} thumbnails={exhibit.preview.thumbnails} captionTitle={exhibit.title} className="ml-1 ml-xl-4 mb-1 mb-xl-4" />;
 };
 
 function Home(props) {
-
   const exhibits = props.exhibits.map(getLink);
 
   return (
@@ -106,9 +105,8 @@ function Home(props) {
           </div>
         </main>
       </div>
-      <div className="row">
-        <div className="col-12 page-edge-shadow reverse"></div>
-      </div>
+      <Footer>
+      </Footer>
     </div>
   );
 }

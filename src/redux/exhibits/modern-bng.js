@@ -26,7 +26,10 @@ Enabling modern graphics using a C# mod integration enabled aesthetics not seen 
 Hence, "Modern BNG" is a C# mod that enables these never-seen-before aesthetics.
     `,
     "preview": {
-        "thumbnail": "https://i.imgur.com/k3cNkZO.jpg",
+		"thumbnails": {
+			"webm": "modern-bng.webm",
+			"mp4": "modern-bng.mp4"
+		},
         "about": "Programatically apply Unity physical-based rendering to a scene with light data",
         "images": [
             {

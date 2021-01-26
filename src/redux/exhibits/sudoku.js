@@ -25,7 +25,10 @@ This project explores the application of depth-first tree searching (in combinat
 Due to the space complexity, this product prioritises memory efficiency during solution generation.
     `,
     "preview": {
-		"thumbnail": "https://i.imgur.com/lA6Qa4v.jpg",
+		"thumbnails": {
+			"webm": "sudoku.webm",
+			"mp4": "sudoku.mp4"
+		},
 		"about": "Memory-efficient Sudoku solution generation via depth-first algorithm"
 	},
     "codeSnippets": [

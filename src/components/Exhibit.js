@@ -20,7 +20,7 @@ const getLearntListItems = lessons => lessons.map((l, idx) =>
 );
 
 const getPreviewImgs = imgs => imgs.map((img, idx) => 
-    <a key={idx} href={img.src} alt="Click to view this full-size image in a new tab" target="_blank" className="col-12 col-lg-6">
+    <a key={idx} href={img.src} alt="Click to view this full-size image in a new tab" target="_blank" rel="noreferrer" className="col-12 col-lg-6">
         <figure>
             <img src={img.src} alt={img.alt} className="w-100 wrapper-assets--photo" />
             <figcaption className="p-2 text-small">{img.alt}</figcaption>
@@ -132,9 +132,6 @@ class Exhibit extends React.Component {
                             {this.props.item.codeSnippets && this.props.item.codeSnippets.length && getEmbeddedCodeSnippets(this.props.item.codeSnippets)}
                         </div>
                     </main>
-                </div>
-                <div className="row">
-                    <div className="col-12 page-edge-shadow reverse"></div>
                 </div>
             </div>
         );

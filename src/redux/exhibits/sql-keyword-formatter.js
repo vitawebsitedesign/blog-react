@@ -30,7 +30,10 @@ Specifically, one can now just copy & paste entire T-SQL snippets, and immediate
 The significant productivity boost enabled by this app proves valuable.
     `,
     "preview": {
-        "thumbnail": "https://i.imgur.com/6lPGLPM.jpg",
+		"thumbnails": {
+			"webm": "sql-keyword-formatter.webm",
+			"mp4": "sql-keyword-formatter.mp4"
+		},
         "about": "Automatically uppercase T-SQL keywords in multi-line strings",
         "images": [
             {

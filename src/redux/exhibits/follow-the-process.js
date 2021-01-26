@@ -23,7 +23,10 @@ Hence, a portable method to identify & analyze these continually evolving opport
 This mobile app was used on a daily basis, during bus & train transport to & from work.
     `,
     "preview": {
-        "thumbnail": "https://i.imgur.com/Mtt86Na.jpg",
+		"thumbnails": {
+			"webm": "follow-the-process.webm",
+			"mp4": "follow-the-process.mp4"
+		},
         "about": "Windows mobile app to scan daily stockmarket business opportunities"
     },
     "codeSnippets": [

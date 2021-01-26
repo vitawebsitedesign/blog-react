@@ -25,7 +25,10 @@ A service that enabled users to import spreadsheets & bulk shorten URLs would pr
 This ASP.NET MVC Core & Entity Framework Core project processes spreadsheets, URL hashing & short URL redirection.
     `,
     "preview": {
-		"thumbnail": "https://i.imgur.com/AHzPB5i.jpg",
+		"thumbnails": {
+			"webm": "bulk-url-shortener.webm",
+			"mp4": "bulk-url-shortener.mp4"
+		},
 		"about": "Quickly convert spreadsheets into a list of shortened URLs"
 	},
   "codeSnippets": [

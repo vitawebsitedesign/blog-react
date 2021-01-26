@@ -25,7 +25,10 @@ Blender has an API that can be interacted with Python scripts to develop 3D geom
 These scripts use the Blender API to create & edit geometry, script animations of 3D curves & apply emissive materials.
     `,
     "preview": {
-		"thumbnail": "https://i.imgur.com/HLMa9IE.jpg",
+		"thumbnails": {
+			"webm": "exhibit-thumbnail-3d-geometry-and-materials.webm",
+			"mp4": "exhibit-thumbnail-3d-geometry-and-materials.mp4"
+		},
 		"about": "Blender scripts exploring geometry creation & materials application",
         "images": [
             {

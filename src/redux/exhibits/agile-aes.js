@@ -26,7 +26,10 @@ Developers no longer need to know exact encryption implementation details, and a
 Hence, AgileAES is a library that productively abstracts AES through a series of 1-liners.
     `,
     "preview": {
-		"thumbnail": "https://i.imgur.com/sI380Ma.jpg",
+		"thumbnails": {
+			"webm": "agile-aes.webm",
+			"mp4": "agile-aes.mp4"
+		},
 		"about": "Easily do AES encryption and/or ciphering between clear text & SecureString"
 	},
     "codeSnippets": [

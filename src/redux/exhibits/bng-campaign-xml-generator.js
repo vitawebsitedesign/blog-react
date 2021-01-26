@@ -26,7 +26,10 @@ Hence, a tool with a user-friendly UI to automatically generate the necessary XM
 For maximal access, this tool is hosted on CodePen, which was made possible through Webpack bundles.
     `,
     "preview": {
-        "thumbnail": "https://i.imgur.com/aiMY2nH.jpg",
+		"thumbnails": {
+			"webm": "bng-campaign-xml-generator.webm",
+			"mp4": "bng-campaign-xml-generator.mp4"
+		},
         "about": "Real-time XML generator for BallisticNG custom campaigns",
         "videos": [
             {
